@@ -39,7 +39,7 @@ public class RewardService {
 	public DisplayCustRewardSummary getCustomerTransactionsByName(String custName) {
 		cust.setName(custName);
 		displayRewards.setCustomer(cust);
-		return mapToDisplayObject(custTranRepo.findByCustomerName(custName));
+		return mapToDisplayObject(custTranRepo.findByCustomerNameIgnoreCase(custName));
 
 	}
 

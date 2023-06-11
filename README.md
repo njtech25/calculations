@@ -1,4 +1,8 @@
-# calculations
+curl --location 'http://localhost:8080/rewards/name/Alex' \
+--header 'Authorization: Basic YWRtaW46YWRtaW4=' \
+--header 'Cookie: JSESSIONID=5B646673E959EEB41DAC01872D1F88F4'curl --location 'http://localhost:8080/rewards/104' \
+--header 'Authorization: Basic YWRtaW46YWRtaW4=' \
+--header 'Cookie: JSESSIONID=5B646673E959EEB41DAC01872D1F88F4'# calculations
 
 Given below are the steps to build project.
 

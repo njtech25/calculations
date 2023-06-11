@@ -32,13 +32,14 @@ values(104,current_date,'Phil',104);
 insert into CUSTTRANSACTION (AMOUNT , 	DATE , 	CUSTOMER_ID  )
 values(30,current_date-30,104);
 
-values(10,current_date-60,104);
+insert into CUSTTRANSACTION (AMOUNT , 	DATE , 	CUSTOMER_ID  )
+values(30,current_date-60,104);
 
 insert into CUSTTRANSACTION (	AMOUNT , 	DATE , 	CUSTOMER_ID  )
 values(500,current_date-15,104);
 
 insert into CUSTTRANSACTION ( 	AMOUNT , 	DATE , 	CUSTOMER_ID  )
-values(5.25,current_date-10,104);
+values(5,current_date-10,104);
 
 insert into CUSTTRANSACTION (	AMOUNT , 	DATE , 	CUSTOMER_ID  )
 values(1000,current_date-90,104);
@@ -50,19 +51,24 @@ values(75,current_date-120,104);
 insert into CUSTTRANSACTION (AMOUNT , 	DATE , 	CUSTOMER_ID  )
 values(30,current_date-30,103);
 
-values(10,current_date-60,103);
-
-insert into CUSTTRANSACTION (	AMOUNT , 	DATE , 	CUSTOMER_ID  )
-values(500,current_date-15,103);
-
-insert into CUSTTRANSACTION ( 	AMOUNT , 	DATE , 	CUSTOMER_ID  )
-values(5.25,current_date-10,103);
+insert into CUSTTRANSACTION (AMOUNT , 	DATE , 	CUSTOMER_ID  )
+values(300,current_date-60,103);
 
 insert into CUSTTRANSACTION (	AMOUNT , 	DATE , 	CUSTOMER_ID  )
 values(101,current_date-90,103);
 
 insert into CUSTTRANSACTION (	AMOUNT , 	DATE , 	CUSTOMER_ID  )
 values(750,current_date-120,103);
+
+insert into CUSTTRANSACTION (	AMOUNT , 	DATE , 	CUSTOMER_ID  )
+values(75,current_date-150,103);
+
+insert into CUSTTRANSACTION (	AMOUNT , 	DATE , 	CUSTOMER_ID  )
+values(500,current_date-15,103);
+
+insert into CUSTTRANSACTION ( 	AMOUNT , 	DATE , 	CUSTOMER_ID  )
+values(567,current_date-10,103);
+
 
 
 

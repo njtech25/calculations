@@ -29,7 +29,7 @@ public class CustomerRewardResource {
 
 	@GetMapping(path = "/rewards/name/{name}")
 	public DisplayCustRewardSummary getCustomerRewardsByName(@PathVariable String name) {
-		Customer retrieveCustomer=	custRepoService.findByName(name);
+		Customer retrieveCustomer=	custRepoService.findByNameIgnoreCase(name);
 		if(retrieveCustomer == null) {
 			throw new CustomerNotFoundException("Customer Does n't Exist");
 		}

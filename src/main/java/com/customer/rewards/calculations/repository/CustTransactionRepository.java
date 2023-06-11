@@ -10,6 +10,6 @@ public interface CustTransactionRepository extends JpaRepository<CustTransaction
 	
 	  List<CustTransaction> findByCustomerId(int id);
 	  
-	  List<CustTransaction> findByCustomerName(String Name);
+	  List<CustTransaction> findByCustomerNameIgnoreCase(String Name);
 
 }

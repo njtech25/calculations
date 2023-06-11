@@ -6,7 +6,7 @@ import com.customer.rewards.calculations.model.Customer;
 
 public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 	
-	Customer findByName(String name);
+	Customer findByNameIgnoreCase(String name);
 	Customer findById(int id);
 	
 	
