@@ -3,8 +3,6 @@
  */
 package com.customer.rewards.calculations.rest.resources;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,7 +27,7 @@ public class CustomerRewardResource {
 	CustomerRepository custRepoService;
 	
 
-	@GetMapping(path = "/getRewards/name/{name}")
+	@GetMapping(path = "/rewards/name/{name}")
 	public DisplayCustRewardSummary getCustomerRewardsByName(@PathVariable String name) {
 		Customer retrieveCustomer=	custRepoService.findByName(name);
 		if(retrieveCustomer == null) {
@@ -38,8 +36,12 @@ public class CustomerRewardResource {
 		return rewardService.getCustomerTransactionsByName(name);
 	}
 	
-	@GetMapping(path = "/getRewards/{custId}")
+	@GetMapping(path = "/rewards/{custId}")
 	public  DisplayCustRewardSummary getCustomerRewardsById(@PathVariable int custId) {
+		Customer retrieveCustomer=	custRepoService.findById(custId);
+		if(retrieveCustomer == null) {
+			throw new CustomerNotFoundException("Customer Does n't Exist");
+		}
 		return rewardService.getCustomerTransactions(custId);
 	}
 

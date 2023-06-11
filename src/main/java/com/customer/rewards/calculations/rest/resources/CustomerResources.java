@@ -39,8 +39,8 @@ public class CustomerResources {
 	}
 	
 	@GetMapping("/customers/{id}")
-	Optional<Customer> getCustomerById(@PathVariable int id){
-		Optional<Customer> retrieveCustomer=	custRepoService.findById(id);
+	Customer getCustomerById(@PathVariable int id){
+		Customer retrieveCustomer=	custRepoService.findById(id);
 		if(retrieveCustomer == null) {
 			throw new CustomerNotFoundException("Customer Does n't Exist");
 		}

@@ -27,9 +27,9 @@ public class RewardService {
 	CustTransactionRepository custTranRepo;
 	int grandTotalRewards = 0;
 	DisplayCustRewardSummary displayRewards = new DisplayCustRewardSummary();
+	Customer cust = new Customer();
 
 	public DisplayCustRewardSummary getCustomerTransactions(int custId) {
-		Customer cust = new Customer();
 		cust.setId(custId);
 		displayRewards.setCustomer(cust);
 		return mapToDisplayObject(custTranRepo.findByCustomerId(custId));
@@ -37,7 +37,6 @@ public class RewardService {
 	}
 
 	public DisplayCustRewardSummary getCustomerTransactionsByName(String custName) {
-		Customer cust = new Customer();
 		cust.setName(custName);
 		displayRewards.setCustomer(cust);
 		return mapToDisplayObject(custTranRepo.findByCustomerName(custName));

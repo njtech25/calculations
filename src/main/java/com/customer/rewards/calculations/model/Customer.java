@@ -74,6 +74,7 @@ public class Customer {
 	@JsonIgnore
 	//@JsonProperty("Date Of Birth")
 	LocalDate dob;
+	
 	@JsonProperty("Address")
     @OneToOne
 	Address address;
