@@ -15,6 +15,8 @@ import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -77,6 +79,7 @@ public class Customer {
 	
 	@JsonProperty("Address")
     @OneToOne
+    @JsonInclude(Include.NON_NULL)
 	Address address;
 	public Customer() {
 
