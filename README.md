@@ -3,8 +3,11 @@
 Given below are the steps to build project.
 
 1.git clone the project in local workspace.
+
 2.run mvn clean install
+
 3.run as spring boot project or from command prompt java -jar calculations-0.0.1-SNAPSHOT.jar
+
 4.This project is using H2 in memory database
 
 once Project is setup
