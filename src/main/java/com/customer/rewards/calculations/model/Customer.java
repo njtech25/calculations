@@ -70,6 +70,7 @@ public class Customer {
 	int id;
 	@JsonProperty("Customer Name")
 	@Size(min = 2, message="Name length >= 2")
+	@JsonInclude(Include.NON_NULL)
 	String name;
 	
 	@Past(message ="Birth Date is not valid ")
