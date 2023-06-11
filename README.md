@@ -14,14 +14,14 @@ once Project is setup
 
 Sample curl command
 
-To get rewards summary by name
+1. To get rewards summary by name
 
-curl --location 'http://localhost:8080/getRewards/name/Alex' \
---header 'Authorization: Basic YWRtaW46YWRtaW4=' \
---header 'Cookie: JSESSIONID=5B646673E959EEB41DAC01872D1F88F4'
+  curl --location 'http://localhost:8080/getRewards/name/Alex' \
+  --header 'Authorization: Basic YWRtaW46YWRtaW4=' \
+  --header 'Cookie: JSESSIONID=5B646673E959EEB41DAC01872D1F88F4'
 
-To get rewards summary by id
+2. To get rewards summary by id
 
-curl --location 'http://localhost:8080/getRewards/104' \
---header 'Authorization: Basic YWRtaW46YWRtaW4=' \
---header 'Cookie: JSESSIONID=5B646673E959EEB41DAC01872D1F88F4'
+  curl --location 'http://localhost:8080/getRewards/104' \
+  --header 'Authorization: Basic YWRtaW46YWRtaW4=' \
+  --header 'Cookie: JSESSIONID=5B646673E959EEB41DAC01872D1F88F4'
